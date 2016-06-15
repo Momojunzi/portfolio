@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Portfolio Site</title>
+    <link href="css/font_styles.css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:300&subset=latin,latin-ext' rel='stylesheet' >
+    <link href="css/framework.css" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <!-- begin header -->
+    <header class="container">
+        <!-- logo -->
+        <div class="logo icon-momo"></div>
+        <!-- /logo -->
+
+        <!-- begin name and role -->
+        <div class="logo-text">
+            <h1 class="name">Mark Holthaus</h1>
+            <p class="title">Front-end Web Developer</p>
+        </div>
+        <!-- /name and role -->
+    </header>
+    <!-- /header -->
+
+    <hr/><!-- dividing line -->
+
+    <!-- begin jumbo image -->
+    <section class="jumbo container">
+        <picture>
+            <source media="(min-width:800px)" srcset="images/Shige_Erzhutiaoxingtu-1200.jpg 1200w">
+            <source media="(max-width:799px)" srcset="images/Shige_Erzhutiaoxingtu-800.jpg 800w">
+            <img src="images/drinking_tea.jpg" alt="people drinking tea"/>
+        </picture>
+    </section>
+    <!-- /jumbo image -->
+
+    <!-- begin featured work section -->
+    <section class="container featured-work-div">
+
+        <!-- section title -->
+        <div class="col-12 work-div-div">
+            <h2 class="work-div-title">Featured Work</h2>
+        </div>
+        <!-- /section title -->
+
+        <!-- begin links to featured work -->
+        <nav class="col-12 work-links">
+            <figure class="work-figure"><a  href="#">
+                <picture>
+                    <source media="(min-width:1000px)" srcset="images/mantis_shrimp-500.jpg 500w">
+                    <source media="(max-width:999px)" srcset="images/mantis_shrimp-300.jpg 300w">
+                    <img src="images/mantis_shrimp.jpg" alt="mantis shrimp image and link to animal trading card" class="work-img">
+                </picture>
+            </a><figcaption><p>Animal Trading Card</p></figcaption></figure>
+            <figure class="work-figure"><a  href="#">
+                <picture class="work-picture">
+                    <img src="images/mockup_article.JPG" alt="screen capture of mockup article and link to article" class="work-img">
+                </picture>
+            </a><figcaption><p>Mockup Article</p></figcaption></figure>
+            <figure class="work-figure"><a  href="#">
+                <picture>
+                    <source media="(min-width:1000px)" srcset="images/still_life-500-500.jpg 500w">
+                    <source media="(max-width:999px)" srcset="images/still_life-500-300.jpg 300w">
+                    <img src="images/still_life-500.jpg" alt="still life image and link to responsive blog" class="work-img">
+                </picture>
+            </a><figcaption><p>Responsive Blog</p></figcaption></figure>
+        </nav>
+        <!-- /links to featured work -->
+
+    </section>
+    <!-- /featured work section -->
+
+</body>
+</html>
