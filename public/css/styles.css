@@ -31,7 +31,7 @@ img {
   }
 
 /* set background color for the large container elements */
-.container {
+.container-fluid{
     background-color: #fff;
     box-shadow: 1px 1px 5px darkgrey;
 }
@@ -50,28 +50,28 @@ img {
 
 /* default styles and positioning for the text in the header */
 .logo-text {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: column;
-    text-align: left;
-    font-size: .8em;
+
+
     text-shadow: 1px 1px firebrick;
-    width: 75%;
+    width: 100%;
     transition: font-size .5s;
 }
+
+
 
 /* front end web developer */
 .title {
     width: 100%;
-    margin-top: -18px;
+    margin-top: 10px;
     font-weight: 600;
+    font-size: 2em;
 }
 
 /* Mark Holthaus */
 .name {
     width: 100%;
-    font-size: 2em;
     margin-top: 10px;
+    font-size: 4em;
     font-weight: 100;
 }
 
@@ -118,14 +118,7 @@ figcaption {
 /* minor break point @ 320 px. adjust the font sizes and the logo margin */
 @media screen and (min-width:320px) {
 
-    .logo {
-        font-size: 4.2em;
-        margin-top: 5px;
-    }
 
-    .logo-text {
-        font-size: .9em;
-    }
 
     .work-div-title {
         font-size: 1.5em;
@@ -135,27 +128,12 @@ figcaption {
 /*minor breakpoint @ 350 px. adjust font sizes in the header and the logo margin */
 @media screen and (min-width:350px) {
 
-    .logo {
-        font-size: 5em;
-        margin-top: 6px;
-    }
 
-    .logo-text {
-        font-size: 1.05em;
-    }
 }
 
 /* minor breakpoint @ 420px. adjust the font sizes and the alignment of the logo */
 @media screen and (min-width: 420px) {
 
-    .logo {
-        text-align: center;
-        font-size: 6.5em;
-    }
-
-    .logo-text {
-        font-size: 1.25em;
-    }
 
     .work-div-title {
         font-size: 1.65em;
@@ -165,22 +143,9 @@ figcaption {
 /* breakpoint @ 540px. everything becomes larger but still laid out in a single column */
 @media screen and (min-width: 540px) {
 
-    .logo {
-        width: 25%;
-        font-size: 9em;
-    }
-
-    .logo-text {
-        width: 75%;
-        font-size: 1.5em;
-        margin-top: 8px;
-        margin-left: 12%;
-    }
 
     .name {
-        width: 100%;
-        font-size: 2em;
-        margin-top: 15px;
+
     }
 
     .jumbo {
@@ -195,15 +160,7 @@ figcaption {
 /* breakpoint @ 700px. Change layout from a single column to laptop/desktop layout */
 @media screen and (min-width: 700px) {
 
-    .logo {
-        margin-left: 5%;
-    }
 
-    .logo-text {
-        width: 75%;
-        margin-left: 25%;
-        transition: margin-left .5s;
-    }
 
     /* featured work div becomes one row with three columns */
     .work-links {
@@ -225,13 +182,7 @@ figcaption {
 /* minor breakpoint @ 1000px to adjust the header */
 @media screen and (min-width: 1000px) {
 
-    .logo {
-        margin-left: 1%;
-    }
 
-    .logo-text {
-        margin-left: 48%;
-    }
 }
 
 /* breakpoint @ 1128 px. Freeze the content width.
@@ -243,15 +194,7 @@ Set left and right margins to auto to allow whitespace on both sides*/
         margin: auto;
     }
 
-    .logo {
-        max-width: 50%;
-        margin-left: 0;
-    }
 
-    .logo-text {
-        max-width: 50%;
-        margin-left: 55%;
-    }
 
     hr {
         max-width: 1128px;
@@ -268,4 +211,3 @@ Set left and right margins to auto to allow whitespace on both sides*/
         margin: 0 auto 20px auto;
     }
 }
-
