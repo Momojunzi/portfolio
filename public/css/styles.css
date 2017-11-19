@@ -80,15 +80,36 @@ img {
     margin: 10px auto;
 }
 
+.bio{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
 /* setup for links to featured work and the surrounding container */
 .featured-work-div {
     text-align: center;
-    flex-flow: column;
+    flex-wrap: wrap;
     font-weight: lighter;
     transition: text-align 10s;
     margin-bottom: 20px;
 }
 
+.bio-text {
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+#work-row{
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.card{
+  margin-bottom: 20px;
+}
 /* title for the featured work section */
 .work-div-title {
      font-size: 1.2em;
@@ -96,24 +117,6 @@ img {
      text-shadow: 1px 1px firebrick;
      transition: font-size .5s;
  }
-
-.work-figure {
-    max-width: 85%;
-    margin: 0 auto 30px auto;
-}
-
-/* image for each featured work link */
-.work-img {
-    max-width: 95%;
-    max-height: 237px;
-    margin: auto;
-}
-
-/* caption for each featured work image */
-figcaption {
-    font-size: 1em;
-    font-weight: 600;
-}
 
 /* minor break point @ 320 px. adjust the font sizes and the logo margin */
 @media screen and (min-width:320px) {
@@ -164,14 +167,12 @@ figcaption {
 
     /* featured work div becomes one row with three columns */
     .work-links {
-        display: flex;
-        flex-wrap: wrap;
-        flex-flow: row;
+
     }
 
     .work-div-title {
         text-align: left;
-        margin-left: 2%;
+
     }
 
     .work-div-title {

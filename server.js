@@ -5,6 +5,8 @@ var path = require('path');
 var app = express();
 var PORT = process.env.PORT || 3000;
 
+var db = require('./models');
+
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.json());
@@ -14,10 +16,15 @@ app.use(bodyParser.json({ type: 'application/*+json' }));
 
 app.use(express.static('public'));
 
-app.get('/', function(req, res) {
-  res.render('pages/portfolio');
-});
+require("./routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
 
-app.listen(PORT, function(){
-  console.log("listening on port: " + PORT);
+// app.get('/', function(req, res) {
+//   res.render('pages/portfolio');
+// });
+
+db.sequelize.sync({ force: true }).then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
 });
