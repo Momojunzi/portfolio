@@ -17,3 +17,6 @@ values(5, "Friend Finder", "A matching app", "images/friendfinder.jpg", "https:/
 
 INSERT INTO Works(id, title, description, image, siteLink, codeLink, createdAt, updatedAt)
 values(6, "A burger eating app", "Eat a Burger!", "images/burger.jpg", "https://vast-plains-10818.herokuapp.com/", "https://github.com/Momojunzi/sequelizedBurger", 123,123);
+
+INSERT INTO Works(id, title, description, image, siteLink, codeLink, createdAt, updatedAt)
+values(7, "New York Times Search", "Search the Times", "images/nytreact.jpg", "https://dry-lowlands-93203.herokuapp.com/", "https://github.com/Momojunzi/nytreact", 123,123);
